@@ -83,6 +83,20 @@ CREATE TABLE sightings (
     FOREIGN KEY (species_id) REFERENCES species (species_id)
 );
 
+---------------------- Problem-01 --------------------------
+INSERT INTO
+    rangers (name, region)
+VALUES ('Derek Fox', 'Costal Plains');
+
+---------------------- Problem-02 --------------------------
+SELECT COUNT(DISTINCT (species_id)) FROM species;
+---------------------- Problem-03 --------------------------
+---------------------- Problem-04 --------------------------
+---------------------- Problem-05 --------------------------
+---------------------- Problem-06 --------------------------
+---------------------- Problem-07 --------------------------
+---------------------- Problem-08 --------------------------
+---------------------- Problem-09 --------------------------
 INSERT INTO
     sightings (
         species_id,
@@ -127,4 +141,4 @@ VALUES (
         'Unconfirmed shadowy figure seen'
     );
 
-SELECT * from species;
+SELECT * from rangers;
