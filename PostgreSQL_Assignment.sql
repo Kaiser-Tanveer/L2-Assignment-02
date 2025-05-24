@@ -101,9 +101,30 @@ FROM rangers
 GROUP BY
     name
 ORDER BY name;
+
 ---------------------- Problem-05 --------------------------
+SELECT common_name
+FROM species
+    LEFT JOIN sightings ON species.species_id = sightings.species_id
+WHERE
+    sightings.species_id IS NULL;
+
 ---------------------- Problem-06 --------------------------
+SELECT common_name, sighting_time, name
+FROM
+    sightings
+    JOIN rangers ON sightings.ranger_id = rangers.ranger_id
+    JOIN species ON sightings.species_id = species.species_id
+ORDER BY sighting_time DESC
+LIMIT 2;
+
 ---------------------- Problem-07 --------------------------
+UPDATE species
+SET
+    conservation_status = 'Historic'
+WHERE
+    discovery_date < '1800-01-01';
+
 ---------------------- Problem-08 --------------------------
 ---------------------- Problem-09 --------------------------
 INSERT INTO
