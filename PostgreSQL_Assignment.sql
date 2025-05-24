@@ -90,7 +90,10 @@ VALUES ('Derek Fox', 'Costal Plains');
 
 ---------------------- Problem-02 --------------------------
 SELECT COUNT(DISTINCT (species_id)) FROM species;
+
 ---------------------- Problem-03 --------------------------
+SELECT * FROM sightings WHERE location ILIKE '%Pass%';
+
 ---------------------- Problem-04 --------------------------
 ---------------------- Problem-05 --------------------------
 ---------------------- Problem-06 --------------------------
