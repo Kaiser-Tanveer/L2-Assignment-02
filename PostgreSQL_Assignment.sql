@@ -95,6 +95,12 @@ SELECT COUNT(DISTINCT (species_id)) FROM species;
 SELECT * FROM sightings WHERE location ILIKE '%Pass%';
 
 ---------------------- Problem-04 --------------------------
+SELECT name, COUNT(sighting_id)
+FROM rangers
+    JOIN sightings ON rangers.ranger_id = sightings.ranger_id
+GROUP BY
+    name
+ORDER BY name;
 ---------------------- Problem-05 --------------------------
 ---------------------- Problem-06 --------------------------
 ---------------------- Problem-07 --------------------------
@@ -144,4 +150,4 @@ VALUES (
         'Unconfirmed shadowy figure seen'
     );
 
-SELECT * from rangers;
+SELECT * from sightings;
