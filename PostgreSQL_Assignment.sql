@@ -170,6 +170,32 @@ WHERE
     discovery_date < '1800-01-01';
 
 ---------------------- Problem-08 --------------------------
----------------------- Problem-09 --------------------------
+CREATE OR REPLACE FUNCTION get_time_of_day(ts TIMESTAMP)
+RETURNS TEXT 
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    IF EXTRACT(HOUR FROM ts) < 12 THEN
+        RETURN 'Morning';
+    ELSIF EXTRACT(HOUR FROM ts) <= 17 THEN
+        RETURN 'Afternoon';
+    ELSE
+        RETURN 'Evening';
+    END IF;
+END;
+$$ ;
 
-SELECT * from sightings;
+SELECT
+    sighting_id,
+    get_time_of_day (sighting_time) AS time_of_day
+FROM sightings;
+
+---------------------- Problem-09 --------------------------
+DELETE FROM rangers
+WHERE
+    NOT EXISTS (
+        SELECT 1
+        FROM sightings
+        WHERE
+            sightings.ranger_id = rangers.ranger_id
+    );
