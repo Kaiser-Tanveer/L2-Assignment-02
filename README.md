@@ -1,6 +1,8 @@
 # What is PostgreSQL??
 
-PostgreSQL is the world's most Advanced open source relational database management system (RDBMS).
+PostgreSQL is the world's most Advanced open source relational database management system (RDBMS). <br>
+
+It has some amazing features like: <b>Open Source</b>, <b>Relational & SQL-Based</b>, <b>Highly Reliable</b>, <b>Extensible</b> and some <b>Advanced Features</b>.
 
 # Explain the Primary Key and Foreign Key concepts in PostgreSQL.
 
