@@ -1,10 +1,10 @@
-# 1. What is PostgreSQL??
+# ১. PostgreSQL কি??
 
 PostgreSQL হল বিশ্বের সবচেয়ে উন্নত ওপেন সোর্স রিলেশনাল ডাটাবেস ম্যানেজমেন্ট সিস্টেম (RDBMS). <br>
 
 এর কিছু আশ্চর্যজনক বৈশিষ্ট্য রয়েছে যেমন: <b>ওপেন সোর্স</b>, <b>SQL এবং NoSQL উভয় ধরনের ডেটা সাপোর্ট করে</b>, <b>অত্যন্ত নির্ভরযোগ্য</b>, <b>বড় ও জটিল ডেটাবেস প্রজেক্টে ব্যবহারের জন্য উপযোগী</b>.
 
-# 2. Explain the Primary Key and Foreign Key concepts in PostgreSQL.
+# ২. PostgreSQL-এ Primary Key এবং Foreign Key এ ধারণাগুলি ব্যাখ্যা করো।
 
 ## Primary Key
 
@@ -29,7 +29,7 @@ sighting_time TIMESTAMP<br>
 );<br>
 এখানে "ranger_id" একটি foreign key.
 
-# 3. What is the difference between the VARCHAR and CHAR data types?
+# ৩. VARCHAR এবং CHAR ডেটা টাইপের মধ্যে পার্থক্য কী?
 
 ## VARCHAR():
 
@@ -43,7 +43,7 @@ Char(n) হলো নির্দিষ্ট দৈর্ঘ্যের (n)
 উদাহরণ: <br>
 CHAR(10) 10 এর কম হলেও 10 বাইট হিসেবে সংরক্ষণ করে
 
-# 4. Explain the purpose of the WHERE clause in a SELECT statement.
+# ৪. একটি SELECT statement ও WHERE clause উদ্দেশ্য ব্যাখ্যা করো।
 
 WHERE ক্লজ হল SQL-এর একটি গুরুত্বপূর্ণ অংশ, যা নির্দিষ্ট শর্ত অনুযায়ী ডেটা ফিল্টার করতে ব্যবহৃত হয়।<br>
 উদাহরণ: <br>
@@ -51,7 +51,7 @@ SELECT name <br>
 FROM rangers <br>
 WHERE region = 'River Delta';
 
-# 5. What are the LIMIT and OFFSET clauses used for?
+# ৫. LIMIT এবং OFFSET clause গুলের কেন ব্যবহৃত হয়?
 
 LIMIT এবং OFFSET হলো SQL-এ ব্যবহৃত দুটি ক্লজ, যেগুলো মূলত ডেটার পরিমাণ এবং কোন স্থান থেকে শুরু করে ডেটা দেখাবে তা নির্ধারণ করতে ব্যবহৃত হয়।
 
