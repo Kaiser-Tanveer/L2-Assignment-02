@@ -1,10 +1,10 @@
-# What is PostgreSQL??
+# 1. What is PostgreSQL??
 
 PostgreSQL is the world's most Advanced open source relational database management system (RDBMS). <br>
 
 It has some amazing features like: <b>Open Source</b>, <b>Relational & SQL-Based</b>, <b>Highly Reliable</b>, <b>Extensible</b> and some <b>Advanced Features</b>.
 
-# Explain the Primary Key and Foreign Key concepts in PostgreSQL.
+# 2. Explain the Primary Key and Foreign Key concepts in PostgreSQL.
 
 ## Primary Key
 
@@ -29,7 +29,7 @@ sighting_time TIMESTAMP<br>
 );<br>
 Here "ranger_id" is a foreign key.
 
-# What is the difference between the VARCHAR and CHAR data types?
+# 3. What is the difference between the VARCHAR and CHAR data types?
 
 ## VARCHAR():
 
@@ -43,7 +43,7 @@ A Char() stores total length mentioned in the char(..) <br>
 Example: <br>
 CHAR(10) holds a fixed character even if there less than 10
 
-# Explain the purpose of the WHERE clause in a SELECT statement.
+# 4. Explain the purpose of the WHERE clause in a SELECT statement.
 
 The WHERE clause in a SELECT statement is used to filter rows from a table based on specific conditions.<br>
 Example: <br>
@@ -51,7 +51,7 @@ SELECT name <br>
 FROM rangers <br>
 WHERE region = 'River Delta';
 
-# What are the LIMIT and OFFSET clauses used for?
+# 5. What are the LIMIT and OFFSET clauses used for?
 
 ## LIMIT:
 
