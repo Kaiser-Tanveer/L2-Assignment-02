@@ -40,3 +40,29 @@ VARCHAR(10) stores "Cat" as 3 bytes
 A Char() stores total length mentioned in the char(..) <br>
 Example: <br>
 CHAR(10) holds a fixed character even if there less than 10
+
+# Explain the purpose of the WHERE clause in a SELECT statement.
+
+The WHERE clause in a SELECT statement is used to filter rows from a table based on specific conditions.<br>
+Example: <br>
+SELECT name <br>
+FROM rangers <br>
+WHERE region = 'River Delta';
+
+# What are the LIMIT and OFFSET clauses used for?
+
+## LIMIT:
+
+Restricts the maximum number of rows returned by a query.<br>
+Example: <br>
+SELECT \* FROM sightings <br>
+LIMIT 5; <br>
+Here returns only 5 rows.
+
+## OFFSET:
+
+Skips a specific number of rows before beginning to return results.<br>
+Example: <br>
+SELECT \* FROM sightings <br>
+OFFSET 5; <br>
+It skips the first 5 rows and returns the rest.
